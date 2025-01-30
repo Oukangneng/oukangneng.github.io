@@ -1,3 +1,61 @@
+/* Body and basic layout */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;  /* Ensure the body stretches to the full height */
+}
+
+/* The map container */
+#map {
+    width: 100%;
+    height: 100vh;   /* Map takes up the full height of the viewport */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* The scrolling content section */
+#scrolling-content {
+    position: relative;
+    z-index: 10; /* Ensure content is displayed above the map */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* The statistic box, positioned in the top-left corner */
+.stat-box {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease-out;
+    z-index: 20; /* Ensure it is above other content */
+}
+
+.stat-box.hidden {
+    opacity: 0; /* Make the box invisible when the "hidden" class is applied */
+}
+
+/* Styling for the steps in your scrollytelling content */
+.step {
+    padding: 50px;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.step.is-active {
+    opacity: 1;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

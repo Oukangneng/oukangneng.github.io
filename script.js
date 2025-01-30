@@ -1,3 +1,26 @@
+// Initialize Scrollama
+const scroller = scrollama();
+
+// Setup Scrollama for triggering events based on scroll position
+scroller
+    .setup({
+        step: '.step',  // Target the sections
+        offset: 0.5,    // Trigger when 50% of the section is in view
+        debug: false    // Set to true if you want debug info
+    })
+    .onStepEnter(handleStepEnter);  // Callback function for when a step is scrolled into view
+
+// Function to handle step enter
+function handleStepEnter(response) {
+    const stepIndex = response.index;  // Get the index of the section in view
+
+    // When the user scrolls to the first section, hide the statistic box
+    if (stepIndex === 0) {
+        // Add the 'hidden' class to the statistic box to fade it out
+        document.getElementById('stat-box').classList.add('hidden');
+    }
+}
+
 // Create map centered at a default location (e.g., Beijing)
 const map = L.map('map').setView([39.9042, 116.4074], 5); // Beijing's coordinates
 

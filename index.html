@@ -4,20 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrollytelling with OSM and Scrollama</title>
-    
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Ensure the map has a defined height */
-        #map { 
-            height: 600px; 
-            width: 100%; 
-        }
-    </style>
 </head>
 <body>
 
@@ -48,32 +40,6 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/scrollama/dist/scrollama.min.js"></script>
-
-    <script>
-        // Initialize the map
-        var map = L.map('map').setView([35.8617, 104.1954], 4); // Centered on China
-
-        // Add OpenStreetMap tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-    </script>
-
     <script src="script.js"></script>
 </body>
 </html>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-    var map = L.map('map').setView([35.8617, 104.1954], 5); // Adjust zoom if needed
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Fix map scale issue
-    setTimeout(() => {
-        map.invalidateSize();
-    }, 100);
-</script>
-

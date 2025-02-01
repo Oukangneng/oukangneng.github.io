@@ -62,3 +62,18 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').setView([35.8617, 104.1954], 5); // Adjust zoom if needed
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Fix map scale issue
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 100);
+</script>
+

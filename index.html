@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrollytelling with OSM and Scrollama</title>
+    
+    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/scrollama/dist/scrollama.min.js"></script>
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Ensure the map has a defined height */
+        #map { 
+            height: 600px; 
+            width: 100%; 
+        }
+    </style>
 </head>
 <body>
-    <!-- Statistic Box (this will disappear after scrolling) -->
+
+    <!-- Statistic Box -->
     <div id="stat-box" class="stat-box">
         <p><strong>Statistic:</strong> Over 1 million political prisoners in China since 1990.</p>
     </div>
 
-    <!-- Map -->
+    <!-- Map Container -->
     <div id="map"></div>
 
     <!-- Scrolling Content -->
@@ -35,38 +45,20 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
-
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollytelling with OSM and Scrollama</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/scrollama/dist/scrollama.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="map"></div>
-    <div id="scrolling-content">
-        <div class="step">
-            <h2>Section 1: Introduction</h2>
-            <p>Introduction to the scrollytelling story.</p>
-        </div>
-        <div class="step">
-            <h2>Section 2: Political Prisoner #1</h2>
-            <p>Details about this prisoner.</p>
-        </div>
-        <div class="step">
-            <h2>Section 3: Trends Over Time</h2>
-            <p>Trends in political imprisonment over time.</p>
-        </div>
-    </div>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([35.8617, 104.1954], 4); // Centered on China
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
-

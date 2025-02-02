@@ -53,3 +53,14 @@ function handleStepEnter(response) {
         alert('Show trends in political imprisonment.');
     }
 }
+function handleStepEnter(response) {
+    const stepIndex = response.index; 
+
+    if (stepIndex === 0) {
+        map.setView([35.8617, 104.1954], 4); // Zoomed out view of China
+    } else if (stepIndex === 1) {
+        map.setView([39.9042, 116.4074], 10); // Zoom into Beijing for prisoner #1
+    } else if (stepIndex === 2) {
+        map.setView([31.2304, 121.4737], 10); // Zoom into Shanghai for prisoner #2
+    }
+}

@@ -1,5 +1,16 @@
 // Initialize the map
-var map = L.map('map').setView([35.8617, 104.1954], 4); // China-centered
+const map = L.map('map', {
+    center: [35.8617, 104.1954], 
+    zoom: 4,
+    zoomControl: false,   // Removes the zoom buttons
+    dragging: false,      // Disables dragging
+    scrollWheelZoom: false, // Disables scroll zoom (we control zoom manually)
+    doubleClickZoom: false, // Disables zoom on double click
+    boxZoom: false,       // Disables zooming with box selection
+    touchZoom: false      // Disables zooming on touch devices
+});
+
+
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

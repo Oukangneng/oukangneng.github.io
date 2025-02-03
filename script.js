@@ -1,18 +1,15 @@
 // Initialize the map
 const map = L.map('map', {
-    center: [35.8617, 104.1954], 
+    center: [35.8617, 104.1954], // China
     zoom: 4,
-    zoomControl: false,   // Removes the zoom buttons
-    dragging: false,      // Disables dragging
-    scrollWheelZoom: false, // Disables scroll zoom (we control zoom manually)
-    doubleClickZoom: false, // Disables zoom on double click
-    boxZoom: false,       // Disables zooming with box selection
-    touchZoom: false      // Disables zooming on touch devices
+    zoomControl: false,  // Remove zoom buttons
+    dragging: false,     // Disable dragging
+    scrollWheelZoom: false, // Disable manual zooming
+    doubleClickZoom: false,
+    boxZoom: false,
+    touchZoom: false
 });
 
-
-
-// Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);

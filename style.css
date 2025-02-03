@@ -7,6 +7,8 @@
     height: 100vh; /* Full height */
     z-index: 0;
 }
+
+/* Scrolling content section styling */
 #scrolling-content {
     position: relative;
     z-index: 10; /* Ensures text appears above map */
@@ -14,8 +16,7 @@
     background: rgba(255, 255, 255, 0.8); /* Adds slight opacity to improve readability */
 }
 
-
-/* Ensure statistic box is visible */
+/* Statistic box styling */
 .stat-box {
     position: fixed;
     top: 20px;
@@ -28,13 +29,16 @@
     transition: opacity 0.5s ease-out;
 }
 
+/* When hidden, fade out statistic box */
 .stat-box.hidden {
     opacity: 0;
 }
+
+/* Floating info box styling */
 .info-box {
-    position: fixed;  /* Keeps it fixed on the screen */
-    bottom: 20px;     /* Position it near the bottom */
-    left: 20px;       /* Position it on the left */
+    position: fixed; /* Keeps it fixed on the screen */
+    bottom: 20px; /* Position it near the bottom */
+    left: 20px;   /* Position it on the left */
     background: rgba(255, 255, 255, 0.9); /* Slight transparency */
     padding: 15px;
     border-radius: 8px;

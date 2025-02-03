@@ -7,13 +7,13 @@
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-<<!-- Floating Info Box -->
-<div id="info-box" class="info-box">Scroll to explore</div>
->
+<body>  <!-- 🚨 Missing Body Tag FIXED -->
+
+    <!-- Floating Info Box -->
+    <div id="info-box" class="info-box">Scroll to explore</div>
 
     <!-- Statistic Box -->
     <div id="stat-box" class="stat-box">
@@ -21,7 +21,7 @@
     </div>
 
     <!-- Map Container -->
-    <div id="map"></div>
+    <div id="map"></div>  <!-- ✅ Make sure this is inside <body> -->
 
     <!-- Scrolling Content -->
     <div id="scrolling-content">

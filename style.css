@@ -1,23 +1,21 @@
+
+
 /* Ensure the map takes only part of the screen */
-map {
-    width: 100%;
-    height: 100vh;  /* Full height of the viewport */
-    position: fixed; /* Fixes the map in place */
+#map {
+    position: fixed; /* Keeps the map in place */
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100vh; /* Full height */
     z-index: 0;
 }
-
-
-
-/* Adjust scrolling content to appear above the map */
 #scrolling-content {
     position: relative;
-    z-index: 10; /* Make sure it stays above the map */
-    background: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+    z-index: 10; /* Ensures text appears above map */
     padding: 20px;
-    margin-top: 80vh; /* Ensure content starts below the map */
+    background: rgba(255, 255, 255, 0.8); /* Adds slight opacity to improve readability */
 }
+
 
 /* Ensure statistic box is visible */
 .stat-box {

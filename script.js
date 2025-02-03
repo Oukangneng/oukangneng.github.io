@@ -12,10 +12,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Fix potential map rendering issues
-setTimeout(() => {
-    map.invalidateSize();
-}, 100);
+// Check if the map is initialized correctly
+console.log("Map initialized");
 
 // Define the locations of the political prisoners
 const locations = [
@@ -42,7 +40,7 @@ scroller
     .setup({
         step: '.step',  // Target each text section
         offset: 0.5,    // Trigger at 50% of viewport
-        debug: false
+        debug: true      // Enable debug for better troubleshooting
     })
     .onStepEnter(({ index }) => {
         const { coords, zoom, text } = locations[index];
@@ -56,4 +54,10 @@ scroller
         // Remove all markers and show only the relevant one
         markers.forEach(marker => marker.remove());
         map.addLayer(markers[index]);
+
+        // Log the text being displayed
+        console.log("Displaying: " + text);
     });
+
+// Check if the Scrollama is set up properly
+console.log("Scrollama initialized and ready to interact");

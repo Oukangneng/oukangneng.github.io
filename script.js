@@ -57,4 +57,3 @@ scroller
         markers.forEach(marker => marker.remove());
         map.addLayer(markers[index]);
     });
-

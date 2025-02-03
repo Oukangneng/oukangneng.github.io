@@ -106,6 +106,24 @@ function handleStepEnter(response) {
     document.getElementById("info-box").innerHTML = text;
 }
 
+// Define prisoner markers (hidden initially)
+const markers = locations.map(({ coords, text }) => {
+    return L.marker(coords).bindPopup(`<b>${text}</b>`).addTo(map).openPopup();
+});
+
+// Hide all markers at first
+markers.forEach(marker => marker.remove());
+
+// Show marker when scrolling to the section
+scroller.onStepEnter(({ index }) => {
+    map.setView(locations[index].coords, locations[index].zoom, { animate: true });
+
+    // Remove previous markers and show only the relevant one
+    markers.forEach(marker => marker.remove());
+    map.addLayer(markers[index]);
+});
+
+
 
 
 

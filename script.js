@@ -98,6 +98,15 @@ function handleStepEnter(response) {
     document.getElementById("info-box").innerHTML = text;
 }
 
+function handleStepEnter(response) {
+    const index = response.index;  // Get section index
+    const { text } = locations[index];  // Get corresponding text
+
+    // Update the floating info box with new content
+    document.getElementById("info-box").innerHTML = text;
+}
+
+
 
 
 

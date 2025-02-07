@@ -13,18 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Initialize the map
 var map = L.map('map', {
-    center: [20, 0], // Centered at an approximate global midpoint
-    zoom: 2, // Zoomed out to show most of the world
     zoomControl: false,
     scrollWheelZoom: false,
-    dragging: false,
+    dragging: false
 });
 
+// Set the initial world view explicitly
+map.setView([20, 0], 2); 
+
+// Add OpenStreetMap tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
     
-    // Add OpenStreetMap tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
 
     console.log("Map initialized");
 

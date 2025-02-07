@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     scroller.setup({
         step: '.step',
-        offset: 0.5,
-        debug: true
+        offset: 0.75, // Trigger a bit later for better effect
+        debug: false
     }).onStepEnter(({ index }) => {
         const { coords, zoom, text } = locations[index];
 
         // Move map view with smooth animation
-        map.setView(coords, zoom, { animate: true, duration: 2 });
+        map.flyTo(coords, zoom, { animate: true, duration: 2 });
 
         // Update floating info box
         const infoBox = document.getElementById("info-box");

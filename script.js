@@ -13,13 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize the map
     var map = L.map('map', {
+        center: [35.8617, 104.1954], // Center of China
+        zoom: 4,
         zoomControl: false,
         scrollWheelZoom: false,
-        dragging: false
+        dragging: false,
     });
-
-    // Set the initial world view explicitly
-    map.setView([20, 0], 2); // Fully zoomed out
 
     // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -28,10 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Map initialized");
 
-    // Define zoom transition steps
+    // Define political prisoner locations
     const locations = [
-        { coords: [20, 0], zoom: 1, text: "Global Overview" }, // Start
-        { coords: [35.8617, 104.1954], zoom: 4, text: "Zooming into China" }, // China Overview
+        { coords: [35.8617, 104.1954], zoom: 4, text: "Overview of political prisoners in China" }, // Start
         { coords: [30.657, 104.066], zoom: 8, text: "Zooming into Sichuan Province" }, // Sichuan Zoom
         { coords: [30.578, 103.947], zoom: 12, text: "Political Prisoner 1 - Sichuan" }, // First prisoner in Sichuan
         { coords: [31.2304, 121.4737], zoom: 10, text: "Political Prisoner 2 - Shanghai" },

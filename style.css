@@ -18,16 +18,19 @@
 
 /* Statistic box styling */
 .stat-box {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 20;
-    transition: opacity 0.5s ease-out;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40%; /* Adjust to fit within the top-left quarter */
+    max-width: 400px; /* Optional: Prevent it from getting too wide */
+    height: auto; /* Auto height to fit text */
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
 }
+
 
 /* When hidden, fade out statistic box */
 .stat-box.hidden {

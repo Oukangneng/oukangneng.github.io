@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Set the initial world view explicitly
-    map.setView([20, 0], 1); // Fully zoomed out
+    map.setView([20, 0], 2); // Fully zoomed out
 
     // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

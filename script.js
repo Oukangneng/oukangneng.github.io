@@ -11,15 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("stat-box not found in DOM");
     }
 
-    // Initialize the map
-    var map = L.map('map', {
-        center: [35.8617, 104.1954], // Center of China
-        zoom: 4,
-        zoomControl: false,
-        scrollWheelZoom: false,
-        dragging: false,
-    });
+// Initialize the map
+var map = L.map('map', {
+    center: [20, 0], // Centered at an approximate global midpoint
+    zoom: 2, // Zoomed out to show most of the world
+    zoomControl: false,
+    scrollWheelZoom: false,
+    dragging: false,
+});
 
+    
     // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'

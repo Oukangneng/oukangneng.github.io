@@ -19,7 +19,7 @@ var map = L.map('map', {
 });
 
 // Set the initial world view explicitly
-map.setView([20, 0], 2); 
+map.setView([20, 0], 1); 
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

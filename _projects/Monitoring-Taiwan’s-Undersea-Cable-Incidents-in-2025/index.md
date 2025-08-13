@@ -5,5 +5,5 @@ description: This essay and accompanying data visualization examine disturbances
 skills: 
 - skill 1
 - skill 2
-main-image: /project.webp 
+main-image: /project1.png
 ---

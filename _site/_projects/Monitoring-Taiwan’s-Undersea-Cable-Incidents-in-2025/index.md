@@ -41,7 +41,7 @@
   <div class="page">
     <div class="post-view">
       <div class="summary">
-        <img src="screenshot1.jpg" alt="Taiwan Undersea Cable Map Screenshot">
+        <img src="project1.jpg" alt="Taiwan Undersea Cable Map Screenshot">
         <div class="title-header">
           <h1>Monitoring Taiwan's Undersea Cable Incidents in 2026</h1>
         </div>

@@ -42,17 +42,13 @@
     <div class="post-view">
       <div class="summary">
         <img src="screenshot1.jpg" alt="Taiwan Undersea Cable Map Screenshot">
-
-
         <div class="title-header">
           <h1>Monitoring Taiwan's Undersea Cable Incidents in 2026</h1>
         </div>
-
         <div class="project-description">
           <h2>Project Overview</h2>
           <p>This project tracks incidents involving undersea internet cables between Taiwan and China. Using interactive mapping and data visualization, it illustrates disruptions over time and their geopolitical implications.</p>
         </div>
-
         <div class="skills-card">
           <h2>Skills Used</h2>
           <div class="skills-list">
@@ -65,17 +61,14 @@
           </div>
         </div>
       </div>
-
       <div class="content">
         <hr />
         <h2>Project Highlights</h2>
         <p>The interactive map displays the timeline of cable incidents, locations, and affected network regions. Users can scroll to explore specific events and see visualizations of network disruptions.</p>
-
         <div class="image-gallery" style="--gallery-height: 400px;">
           <img src="screenshot2.png" alt="Map Visualization Screenshot" loading="lazy">
           <img src="screenshot3.png" alt="Cable Incident Timeline Screenshot" loading="lazy">
         </div>
-
         <h2>Live Demo</h2>
         <p>Click the button below to explore the interactive map:</p>
         <a href="https://oukangneng.github.io/taiwan-cables-map/" target="_blank" class="project-link">View Interactive Map</a>

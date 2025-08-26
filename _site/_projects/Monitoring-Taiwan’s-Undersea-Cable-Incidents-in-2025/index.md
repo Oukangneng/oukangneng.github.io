@@ -66,12 +66,12 @@
         <h2>Project Highlights</h2>
         <p>The interactive map displays the timeline of cable incidents, locations, and affected network regions. Users can scroll to explore specific events and see visualizations of network disruptions.</p>
         <div class="image-gallery" style="--gallery-height: 400px;">
-          <img src="screenshot2.png" alt="Map Visualization Screenshot" loading="lazy">
+          <img src="project1.png" alt="Map Visualization Screenshot" loading="lazy">
           <img src="screenshot3.png" alt="Cable Incident Timeline Screenshot" loading="lazy">
         </div>
         <h2>Live Demo</h2>
         <p>Click the button below to explore the interactive map:</p>
-        <a href="https://oukangneng.github.io/taiwan-cables-map/" target="_blank" class="project-link">View Interactive Map</a>
+        <a href="https://oukangneng.github.io/aiwanInternet/" target="_blank" class="project-link">View Interactive Map</a>
       </div>
     </div>
   </div>

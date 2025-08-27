@@ -5,7 +5,7 @@ description: "This essay and accompanying data visualization examine disturbance
 skills:
   - Mapbox GL JS
   - Scrollama
-main-image: /project1.png
+main-image: project1.png
 ---
 
 

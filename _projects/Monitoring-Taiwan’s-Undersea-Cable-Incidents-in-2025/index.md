@@ -7,13 +7,11 @@ skills:
   - Scrollama
 main-image: /project1.png
 ---
-# Monitoring Taiwan’s Undersea Cable Incidents in 2026
 
-## Introduction
-Some text here...
+# Header 1 
+Used for the title (already generated automatically at the top)
+## Header 2  
+Use this for the header of each section
+### Header 3 
+Use this to have subsection if needed
 
-## Data Sources
-Some text here...
-
-### Subsection Example
-Details here...

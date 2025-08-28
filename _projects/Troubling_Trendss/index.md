@@ -5,7 +5,7 @@ description: "Can Beijing's new 24-point policy turn the tide on their sluggish 
 skills:
   - Mandarin/English Policy Analysis 
   - Project Collaboration
-main-image: /project1.png
+main-image: /project2.png
 main-link: "https://fengkuangtimes.substack.com/p/troubling-trends-analyzing-foreign"
 ---
 

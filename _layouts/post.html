@@ -5,19 +5,26 @@ layout: wrapper
 <div class="post-view">
     <div class="summary">
         
-       
         {% assign folder_path = page.path | split: "/" | slice: 0, 2 | join: "/" %}
         {% assign image_path = "/" | append: folder_path | append: page['main-image'] %}       
+
+        {% if page.main-link %}
+        <a href="{{ page.main-link }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ image_path }}" alt="{{ page.title }} image">
+        </a>
+        {% else %}
         <img src="{{ image_path }}" alt="{{ page.title }} image">
+        {% endif %}
         
         <div class="title-header">
-            <h1>{{page.title}}</h1>
+            <h1>{{ page.title }}</h1>
         </div>
         
         <div class="project-description">
             <h2>Project Overview</h2>
             <p>{{ page.description }}</p>
         </div>
+        
         <div class="skills-card">
             <h2>Skills Used</h2> 
             <div class="skills-list">
@@ -29,7 +36,7 @@ layout: wrapper
     </div>
       
     <div class="content">
-        {{content}}
+        {{ content }}
     </div>
 </div>
 

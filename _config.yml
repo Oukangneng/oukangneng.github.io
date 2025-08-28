@@ -13,7 +13,7 @@ title: Owen's Portfolio # This is what shows up in the tab of the browser
 
 # Hero Section
 name: "Owen O'Connell"
-headline: a
+headline: 
 description: >- # dont remove this line. this will ignore all new lines until the next section
   I’m a researcher and content creator specializing in China–Taiwan affairs, with a background in Chinese and Economics from the College of the Holy Cross. My studies, including time spent learning Chinese in Beijing and Taipei, have fueled a deep interest in Chinese policy and cross-strait relations. My work spans investigative writing, videography, and interactive data visualization, and I’m passionate about telling stories that merge rigorous research with creative presentation, covering topics from maritime security to digital infrastructure.
 # Place your profile image in /assets/images/profile-image/folder and edit the file name

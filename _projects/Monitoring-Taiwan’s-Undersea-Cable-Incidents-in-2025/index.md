@@ -6,6 +6,8 @@ skills:
   - Mapbox GL JS
   - Scrollama
 main-image: /project1.png
+main-link: "https://oukangneng.github.io/TaiwanInternet/"
+
 ---
 
 ---
